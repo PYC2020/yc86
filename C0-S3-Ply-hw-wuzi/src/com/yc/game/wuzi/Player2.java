@@ -9,6 +9,7 @@ import com.yc.game.wuzi.core.WuziGameImpl;
 import com.yc.game.wuzi.swing.WuziWin;
 
 public class Player2 {
+	
 	public static final int BLACK = 1;
 
 	public static void main(String[] args) throws IOException {
