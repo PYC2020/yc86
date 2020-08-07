@@ -1,0 +1,1 @@
+package yc.favorite.util;
