@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>添加</title>
+<script type="text/javascript"src="js/axios.min.js"></script>
+</head>
+<body>
+	<div id="add">
+		名称:<input id="flable"><br>
+		地址:<input id="furl"><br>
+		分类:<input id="ftags"><br>
+		描述:<textarea id="fdesc"></textarea><br>
+		<button onclick="addFav()">添加</button>
+	</div>
+<script type="text/javascript">
+	function addFav(){
+		url="addFavs.do";
+		params={
+				flable:flable.value,
+				furl:furl.value,
+				ftags:ftags.value,
+				fdesc:fdesc.value
+		};
+		axios.get(url,{params}).then(res=>{
+			alert(res.data)
+		});
+	}
+</script>
+</body>
+</html>

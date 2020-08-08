@@ -10,7 +10,7 @@
 		<where>
 			<choose>
 				<when test="tid==null">
-					ftags is null
+					(ftags is null or ftags='')
 				</when>
 				<when test="tid > 0">
 					and exists (select *from tagfavorite b where a.fid=b.fid

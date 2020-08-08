@@ -9,4 +9,44 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>QueryServlet</display-name>
+    <servlet-name>QueryServlet</servlet-name>
+    <servlet-class>web.QueryServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>QueryServlet</servlet-name>
+    <url-pattern>/queryTags.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>QueryFanvs</display-name>
+    <servlet-name>QueryFanvs</servlet-name>
+    <servlet-class>web.QueryFanvs</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>QueryFanvs</servlet-name>
+    <url-pattern>/QueryFanvs</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>addfav</display-name>
+    <servlet-name>addfav</servlet-name>
+    <servlet-class>web.addfav</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>addfav</servlet-name>
+    <url-pattern>/addfav</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>queryBycount</display-name>
+    <servlet-name>queryBycount</servlet-name>
+    <servlet-class>web.queryBycount</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>queryBycount</servlet-name>
+    <url-pattern>/queryBycount</url-pattern>
+  </servlet-mapping>
 </web-app>
