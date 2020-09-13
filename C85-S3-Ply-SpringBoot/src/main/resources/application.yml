@@ -1,0 +1,28 @@
+#yml不能使用制表符空格，表示缩进
+#赋值 使用冒号加空格（值）
+server: 
+  port: 80
+   
+spring:
+   datasource:
+      driverClassName: com.mysql.jdbc.Driver
+      url: jdbc:mysql://127.0.0.1/c85-ply-damai
+      username: root
+      password: a 
+   mail:
+      host: smtp.qq.com
+      username: 1607548751@qq.com
+      password: hfrdciqhjiwpfjia
+      default-encoding: UTF-8
+#日志
+logging:
+   level:
+       com:
+          yc:
+             C85S3PlySpringBoot:
+             dao: debug
+             web: warn
+#邮件发送
+mail:
+   fromMail:
+      addr: 1607548751@qq.com
